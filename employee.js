@@ -32,9 +32,9 @@ var successFCN = function(theEmployees) {
     
 }
 
-var failFCN -= function(errMessage) {
+var failFCN = function(errMessage) {
     console.log("failure", errMessage);
     d3.selectAll("h1")
     .text("File Not Found");
 }
-directoryPromise.then(successFCN, failFCN);
+employeePromise.then(successFCN, failFCN);
